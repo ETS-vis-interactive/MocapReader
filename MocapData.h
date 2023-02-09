@@ -49,7 +49,7 @@ class MocapData
 public:
   MocapData();
   MocapData(MOCAPHEADER *header);
-  ~MocapData();
+  virtual ~MocapData();
 
   void SetHeader(MOCAPHEADER *header);      // Sets up a pointer to the header structure
   virtual bool ImportData(const char* filename) = 0;    // Starts the import of the HTR file
